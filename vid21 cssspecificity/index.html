@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        .cred{
+            color: red;
+        }
+        .cyellow{
+            color: yellow;
+        }
+        .cpurple{
+            color: purple;
+        }
+        #yk{
+            color: rgb(61, 235, 244);
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+    <div>
+        <h1 style="color: blanchedalmond;" class="cred cyellow cpurple" id="yk" >this is a simple statement</h1>
+    </div>
+</body>
+</html>
